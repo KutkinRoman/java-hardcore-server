@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=UTF-8">
+    <title>WEB server</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<hr>
+<a href="/">Главная страница</a>
+<h2>Регистрация нового пользователя</h2>
+<form class="reg_form" action="/registration" method="post" enctype="text/plain">
+    <div class="reg_form_item">
+        <label for="input_last_name">Фамилия:</label>
+        <input id="input_last_name" type="text" name="lastName" placeholder="Введите вашу фамилию"/>
+    </div>
+    <div class="reg_form_item">
+        <label for="input_first_name">Имя:</label>
+        <input id="input_first_name" type="text" name="&firstName" placeholder="Введите ваше имя"/>
+    </div>
+    <div class="reg_form_item">
+        <label for="input_email">E-mail:</label>
+        <input id="input_email" type="email" name="&email" placeholder="Введите ваш e-mail"/>
+    </div>
+    <div class="reg_form_item">
+        <label for="input_age">Возраст:</label>
+        <input id="input_age" type="number" name="&age" placeholder="Введите ваш возраст"/>
+    </div>
+    <input type="submit" value="Отправить"/>
+</form>
+</body>
+</html>
